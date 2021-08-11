@@ -1,0 +1,109 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.mainframe {
+  display: flex;
+  min-height: 100vh; /*to make align items work*/
+  justify-content: center; /*horizontal positioning of flex*/
+  align-items: center; /*vertical positioning of flex*/
+}
+.imagemain {
+  width: 4em;
+  height: 4em;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.content {
+  margin: 50px 50px;
+}
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+  width: 20em;
+  height: 32em;
+  border-radius: 10px 0px 0px 10px;
+}
+.sedanimage {
+  background-image: url(/images/icon-sedans.svg);
+}
+.suv {
+  background-color: hsl(184, 100%, 22%);
+  width: 20em;
+  height: 32em;
+}
+.suvimage {
+  background-image: url(/images/icon-suvs.svg);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  width: 20em;
+  height: 32em;
+  border-radius: 0px 10px 10px 0px;
+}
+.luxuryimage {
+  background-image: url(/images/icon-luxury.svg);
+}
+.heading {
+  margin-top: 0.4em;
+  color: hsl(0, 0%, 95%);
+  font-family: Big Shoulders Display;
+  font-size: 40px;
+}
+.para {
+  color: hsla(0, 0%, 100%, 0.5);
+  font-family: Lexend Deca;
+  margin-bottom: 130px;
+  font-size: 15px;
+  text-align: left;
+}
+.buttonlearnmore {
+  text-decoration: none;
+  font-family: Lexend Deca;
+  font-size: 15px;
+  padding: 0.8em 2em;
+  border-radius: 24px;
+  background-color: hsl(0, 0%, 95%);
+}
+.box1 {
+  color: hsl(31, 77%, 52%);
+}
+.box2 {
+  color: hsl(184, 100%, 22%);
+}
+.box3 {
+  color: hsl(179, 100%, 13%);
+}
+.box1:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+}
+.box2:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+}
+.box3:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+}
+.buttonlearnmore:hover {
+  border-color: hsl(0, 0%, 95%);
+  border-style: solid;
+}
+@media screen and (max-width: 800px) {
+  .left,
+  .main,
+  .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .mainframe {
+    flex-direction: column;
+  }
+  .sedan {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .luxury {
+    border-radius: 0px 0px 10px 10px;
+  }
+}
